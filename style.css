@@ -1,0 +1,110 @@
+/* =========================================
+   TRABAJO PRÁCTICO CSS - ONE PIECE
+   ========================================= */
+
+/* Paso 3 y 4 - Fondo y tipo de letra */
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Paso 5 - Título principal */
+h1 {
+    color: red;
+    font-size: 40px;
+    text-align: center;
+}
+
+/* Paso 6 - Encabezado */
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* El párrafo del encabezado */
+header p {
+    font-size: 20px;
+}
+
+/* Paso 7, 8 y 9 - Secciones */
+section {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+/* Paso 10 - Títulos de las secciones */
+h2 {
+    color: red;
+    font-size: 28px;
+}
+
+/* Paso 11 - Imágenes */
+img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Paso 12 - Lista */
+li {
+    font-size: 18px;
+    padding: 5px;
+}
+
+/* Paso 13 - Footer */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Paso 14 - Primera clase CSS */
+.destacado {
+    border: 4px solid red;
+}
+
+/* =========================================
+   PASO 15 - PERSONALIZACIÓN
+   ========================================= */
+
+/* Cambio propio 1: color y tamaño */
+.destacado h2 {
+    color: darkred;
+    font-size: 32px;
+}
+
+/* Cambio propio 2: fondo de la lista */
+section:nth-child(3) {
+    background-color: #fff8dc;
+}
+
+/* Cambio propio 3: efecto visual en las imágenes */
+img {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    img {
+        width: 100%;
+    }
+}
