@@ -1,110 +1,286 @@
-/* =========================================
-   TRABAJO PRÁCTICO CSS - ONE PIECE
-   ========================================= */
+/* ==========================================
+   CONFIGURACIÓN GENERAL
+   ========================================== */
 
-/* Paso 3 y 4 - Fondo y tipo de letra */
 body {
-    background-color: lightblue;
+
+    /* Color de fondo */
+    background-color: #e8f4f8;
+
+    /* Tipo de letra */
     font-family: Arial, sans-serif;
+
+    /* Elimina espacio predeterminado */
     margin: 0;
+
+    /* Color general del texto */
+    color: #222;
+
 }
 
-/* Paso 5 - Título principal */
-h1 {
-    color: red;
-    font-size: 40px;
-    text-align: center;
-}
 
-/* Paso 6 - Encabezado */
+/* ==========================================
+   ENCABEZADO
+   ========================================== */
+
 header {
-    background-color: black;
+
+    /* Color del fondo */
+    background-color: #111;
+
+    /* Color del texto */
     color: white;
+
+    /* Centrar texto */
     text-align: center;
+
+    /* Espacio interior */
     padding: 30px;
+
 }
 
-/* El párrafo del encabezado */
-header p {
-    font-size: 20px;
+
+/* ==========================================
+   TÍTULO PRINCIPAL
+   ========================================== */
+
+h1 {
+
+    /* Color */
+    color: #ff3333;
+
+    /* Tamaño */
+    font-size: 40px;
+
+    /* Espacio exterior */
+    margin: 10px;
+
 }
 
-/* Paso 7, 8 y 9 - Secciones */
-section {
-    background-color: white;
-    margin: 20px;
-    padding: 20px;
-    border: 2px solid black;
-    border-radius: 15px;
-}
 
-/* Paso 10 - Títulos de las secciones */
+/* ==========================================
+   TÍTULOS DE SECCIÓN
+   ========================================== */
+
 h2 {
-    color: red;
+
+    /* Color */
+    color: #d62828;
+
+    /* Tamaño */
     font-size: 28px;
+
 }
 
-/* Paso 11 - Imágenes */
-img {
-    width: 300px;
-    max-width: 100%;
-    border-radius: 10px;
-    display: block;
-    margin: 10px auto;
-}
 
-/* Paso 12 - Lista */
-li {
+/* ==========================================
+   PÁRRAFOS
+   ========================================== */
+
+p {
+
+    /* Tamaño de letra */
     font-size: 18px;
-    padding: 5px;
+
+    /* Espacio entre líneas */
+    line-height: 1.5;
+
 }
 
-/* Paso 13 - Footer */
-footer {
-    background-color: black;
-    color: white;
-    text-align: center;
+
+/* ==========================================
+   SECCIONES
+   ========================================== */
+
+.seccion {
+
+    /* Color de fondo */
+    background-color: white;
+
+    /* Ancho */
+    width: 80%;
+
+    /* Espacio exterior */
+    margin: 25px auto;
+
+    /* Espacio interior */
     padding: 20px;
-    margin-top: 30px;
+
+    /* Borde */
+    border: 3px solid #222;
+
+    /* Esquinas redondeadas */
+    border-radius: 15px;
+
 }
 
-/* Paso 14 - Primera clase CSS */
+
+/* ==========================================
+   CLASE DESTACADO
+   ========================================== */
+
 .destacado {
-    border: 4px solid red;
+
+    /* Borde especial */
+    border: 4px solid #d62828;
+
 }
 
-/* =========================================
-   PASO 15 - PERSONALIZACIÓN
-   ========================================= */
 
-/* Cambio propio 1: color y tamaño */
-.destacado h2 {
-    color: darkred;
-    font-size: 32px;
+/* ==========================================
+   LISTAS
+   ========================================== */
+
+.lista {
+
+    /* Fondo */
+    background-color: #f5f5f5;
+
+    /* Espacio interior */
+    padding: 20px 40px;
+
+    /* Esquinas */
+    border-radius: 10px;
+
 }
 
-/* Cambio propio 2: fondo de la lista */
-section:nth-child(3) {
-    background-color: #fff8dc;
+
+/* ==========================================
+   ELEMENTOS DE LAS LISTAS
+   ========================================== */
+
+li {
+
+    /* Tamaño de letra */
+    font-size: 18px;
+
+    /* Espacio */
+    padding: 5px;
+
 }
 
-/* Cambio propio 3: efecto visual en las imágenes */
+
+/* ==========================================
+   IMÁGENES
+   ========================================== */
+
 img {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+    /* Ancho */
+    width: 300px;
+
+    /* Borde */
+    border: 3px solid #222;
+
+    /* Esquinas redondeadas */
+    border-radius: 15px;
+
 }
 
-/* Ajuste para pantallas pequeñas */
+
+/* ==========================================
+   ENLACES
+   ========================================== */
+
+a {
+
+    /* Color */
+    color: #d62828;
+
+    /* Negrita */
+    font-weight: bold;
+
+}
+
+
+/* ==========================================
+   REFERENCIAS
+   ========================================== */
+
+.referencias {
+
+    background-color: #fff8dc;
+
+}
+
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+
+footer {
+
+    /* Fondo */
+    background-color: #111;
+
+    /* Texto */
+    color: white;
+
+    /* Centrar */
+    text-align: center;
+
+    /* Espacio interior */
+    padding: 20px;
+
+}
+
+
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
+
+/*
+   Estas reglas se aplican cuando
+   la pantalla tiene 600px o menos.
+*/
+
 @media (max-width: 600px) {
-    h1 {
-        font-size: 30px;
+
+
+    /* Las secciones ocupan más espacio */
+
+    .seccion {
+
+        width: 85%;
+
+        padding: 15px;
+
     }
 
-    section {
-        margin: 10px;
-        padding: 15px;
+
+    /* Reducimos el tamaño del título */
+
+    h1 {
+
+        font-size: 30px;
+
     }
+
+
+    /* Reducimos los títulos */
+
+    h2 {
+
+        font-size: 23px;
+
+    }
+
+
+    /* Las imágenes se adaptan al celular */
 
     img {
+
         width: 100%;
+
     }
+
+
+    /* Reducimos el tamaño del texto */
+
+    p {
+
+        font-size: 16px;
+
+    }
+
 }

@@ -1,0 +1,257 @@
+<!-- ==========================================================
+     EJEMPLO PARA EXPERIMENTAR CON BOOTSTRAP
+     ========================================================== -->
+
+
+<!--
+    CONTAINER
+    ----------------------------------------------------------
+
+    "container" organiza el contenido y controla su ancho.
+
+    Prueba cambiándolo por:
+
+    container
+    container-fluid
+
+    ¿Qué diferencia observas?
+-->
+
+
+<div class="container">
+
+
+    <!--
+        ROW
+        ------------------------------------------------------
+
+        "row" crea una FILA.
+
+        Dentro de esta fila colocaremos nuestras columnas.
+    -->
+
+    <div class="row">
+
+
+        <!--
+            ==================================================
+            COLUMNA
+            ==================================================
+
+            Tenemos:
+
+            col-12
+            col-md-6
+            col-lg-4
+
+
+            Bootstrap trabaja con 12 columnas.
+
+            En escritorio:
+
+            col-lg-4
+
+            significa:
+
+            4 de 12 columnas
+
+            4 / 12 = 33.33%
+
+
+            Por eso podemos colocar:
+
+            4 + 4 + 4 = 12
+
+            y obtener:
+
+            ┌────────┬────────┬────────┐
+            │ LUFFY  │  ZORO  │  NAMI  │
+            │  4     │   4    │   4    │
+            └────────┴────────┴────────┘
+
+
+            ==================================================
+            PRUEBA CAMBIANDO EL VALOR
+            ==================================================
+
+            Cambia:
+
+            col-lg-4
+
+            por:
+
+            col-lg-6
+
+            Ahora:
+
+            6 / 12 = 50%
+
+            Resultado:
+
+            ┌────────────┐ ┌────────────┐
+            │   LUFFY    │ │    ZORO    │
+            │    6       │ │     6      │
+            └────────────┘ └────────────┘
+
+
+            Cambia ahora por:
+
+            col-lg-3
+
+            3 / 12 = 25%
+
+            Resultado:
+
+            ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐
+            │Luffy │ │ Zoro │ │ Nami │ │ ...  │
+            └──────┘ └──────┘ └──────┘ └──────┘
+
+
+            Cambia ahora por:
+
+            col-lg-12
+
+            12 / 12 = 100%
+
+            Resultado:
+
+            ┌───────────────────────────────┐
+            │            LUFFY              │
+            └───────────────────────────────┘
+
+
+            ==================================================
+            IMPORTANTE
+            ==================================================
+
+            col-lg-4 NO significa 4 píxeles.
+
+            Significa:
+
+            4 de las 12 columnas disponibles.
+
+        -->
+
+
+        <div class="col-12 col-md-6 col-lg-4">
+
+
+            <!--
+                ==================================================
+                CARD
+                ==================================================
+
+                "card" crea una tarjeta Bootstrap.
+
+                Dentro de ella colocaremos nuestro contenido.
+            -->
+
+
+            <div class="card p-4 mb-4">
+
+
+                <!--
+                    ==================================================
+                    PADDING
+                    ==================================================
+
+                    p-4
+
+                    "p" = padding
+
+                    Significa espacio DENTRO de la Card.
+
+                    Prueba:
+
+                    p-1
+                    p-2
+                    p-3
+                    p-4
+                    p-5
+
+                    Observa cómo cambia el espacio entre
+                    el borde de la Card y el contenido.
+
+                -->
+
+
+                <h2>Luffy</h2>
+
+
+                <p>
+
+                    Capitán de los Sombreros de Paja.
+
+                </p>
+
+
+                <!--
+                    ==================================================
+                    BOTÓN
+                    ==================================================
+
+                    btn
+                    → botón Bootstrap
+
+                    btn-primary
+                    → estilo principal
+
+                    Prueba:
+
+                    btn-primary
+                    btn-success
+                    btn-danger
+                    btn-warning
+                    btn-dark
+
+                -->
+
+
+                <button class="btn btn-primary">
+
+                    Ver personaje
+
+                </button>
+
+
+            </div>
+
+
+            <!--
+                ==================================================
+                MARGIN
+                ==================================================
+
+                mb-4
+
+                "m" = margin
+                "b" = bottom
+
+                Significa:
+
+                margin-bottom
+
+                Es decir:
+
+                espacio FUERA de la Card,
+                debajo de ella.
+
+                Prueba:
+
+                mb-1
+                mb-3
+                mb-5
+
+                Observa cómo aumenta o disminuye
+                la separación con otros elementos.
+
+            -->
+
+
+        </div>
+
+
+    </div>
+
+
+</div>
